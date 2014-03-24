@@ -9,8 +9,7 @@
 Product.delete_all
 
 Product.create(:title => 'Spoko loko',
-:description =>
-%{<p>
+:description => %{<p>
 Lorem ipusm lorem ipusm 
 </p>},
 :image_url => '/images/ruby.jpg',
