@@ -11,3 +11,14 @@
  *= require_self
  *= require_tree .
  */
+.list_line_odd {
+	background-color: grey;
+	height: 30px;
+
+}
+
+.list_line_even {
+	background-color: white;
+	height: 30px;
+
+}
