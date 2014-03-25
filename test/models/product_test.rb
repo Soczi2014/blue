@@ -27,7 +27,7 @@ class ProductTest < ActiveSupport::TestCase
 	end
 
 	def new_product(image_url)
-		Product.new(:title => "My Book Title", :description => "hhhh", :price => "1", :image_url => "fred.doc")
+		Product.new(:title => "My Book Title", :description => "hhhh", :price => "1", :image_url => "fred.jpg")
 	end
 
 	test "image_url" do
