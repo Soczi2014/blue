@@ -32,6 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'will_paginate'
+
 gem 'pry-rails' # for better console debugging
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
@@ -44,3 +46,4 @@ gem 'pry-rails' # for better console debugging
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+

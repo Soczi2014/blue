@@ -14,3 +14,10 @@ Lorem ipusm lorem ipusm
 </p>},
 :image_url => '/images/ruby.jpg',
 :price => 20.50)
+
+Order.transaction do
+(1..100).each do |i|
+Order.create(:name => "Customer #{i}", :address => "#{i} Main Street",
+:email => "customer-#{i}@example.com", :pay_type => "Check")
+	end
+end

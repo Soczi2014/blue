@@ -3,6 +3,11 @@
 	font-family: 'Metrophobic', sans-serif;
 }
 
+#store.entry form, #store .entry form div {
+display: inline;
+}
+
+
 .list_line_odd {
 	background-color: grey;
 	height: 30px;
@@ -55,3 +60,15 @@
 	color: #bfb;
 	font-size: small;
 }
+
+#cart, #cart table {
+	font-size: smaller;
+	color: white;
+}
+#cart table {
+	border-top: 1px dotted #595;
+	border-bottom: 1px dotted #595;
+	margin-bottom: 10px;
+}
+
+
