@@ -32,6 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'bcrypt-ruby'
+
 gem 'will_paginate'
 
 gem 'pry-rails' # for better console debugging
