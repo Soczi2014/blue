@@ -1,0 +1,24 @@
+
+[1mFrom:[0m /home/gizo/shop/app/controllers/line_items_controller.rb @ line 33 LineItemsController#create:
+
+    [1;34m27[0m: [32mdef[0m [1;34mcreate[0m
+    [1;34m28[0m: 
+    [1;34m29[0m:   @cart = current_cart
+    [1;34m30[0m:   product = [1;34;4mProduct[0m.find(params[[33m:product_id[0m])
+    [1;34m31[0m:   @line_item = @cart.line_items.build
+    [1;34m32[0m:   @line_item.product = product
+ => [1;34m33[0m:   binding.pry
+    [1;34m34[0m: 
+    [1;34m35[0m:   respond_to [32mdo[0m |format|
+    [1;34m36[0m:     [32mif[0m @line_item.save
+    [1;34m37[0m:       format.html { redirect_to @line_item, [35mnotice[0m: [31m[1;31m'[0m[31mLine item was successfully created.[1;31m'[0m[31m[0m }
+    [1;34m38[0m:       format.xml { render [33m:xml[0m => @line_item,[33m:status[0m => [33m:created[0m, [33m:location[0m => @line_item }
+    [1;34m39[0m: 
+    [1;34m40[0m:     [32melse[0m
+    [1;34m41[0m:       format.html { render [35maction[0m: [31m[1;31m'[0m[31mnew[1;31m'[0m[31m[0m }
+    [1;34m42[0m:       format.xml { render [33m:xml[0m => @line_item.errors,[33m:status[0m => [33m:unprocessable_entity[0m }
+    [1;34m43[0m: 
+    [1;34m44[0m:     [32mend[0m
+    [1;34m45[0m:   [32mend[0m
+    [1;34m46[0m: [32mend[0m
+

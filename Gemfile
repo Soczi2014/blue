@@ -36,6 +36,11 @@ gem 'bcrypt-ruby'
 
 gem 'will_paginate'
 
+group :production do
+	gem 'mysql'
+end
+
+
 gem 'pry-rails' # for better console debugging
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
