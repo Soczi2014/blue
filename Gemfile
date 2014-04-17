@@ -40,6 +40,8 @@ group :production do
 	gem 'mysql'
 end
 
+# Deploy with Capistrano
+gem 'capistrano'
 
 gem 'pry-rails' # for better console debugging
 # Use ActiveModel has_secure_password
